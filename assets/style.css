@@ -125,4 +125,8 @@ button {
     width: 50%;
 }
 
+button.btn{
+    width: 100%;
+}
+
 }
