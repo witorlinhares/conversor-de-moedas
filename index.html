@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Moedas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" href="assets/favicon.png" type="image/x-icon">
 </head>
+
 <body>
-    <main>
-                <img src="assets/flag.jpg" alt="image">
-                <h1>Conversor de Moedas</h1>
-        <form action="conversor.php" method="get">
-            <label for="din">Digite apenas números.</label>
-            <input type="number" name="din" id="din" step="0.01" required>
-        </div>
-        <button class="btn" onclick="window.location.href = 'conversor.php='">Converter</button>
-    </div>
-            
-            </form>
-            <body> 
-                <p>
-                Cotação atualizada com <a href="https://www.bcb.gov.br/estabilidadefinanceira/cotacoestodas">Banco Central.</a>
+    <main class="general">
+            <div class="container">
+             <div class="div-title">
+                <h1 class="title">Conversor de Moedas</h1>
+                </div>
+                <div class="form-button">
+                <div class="div-form">
+                <form class="form" action="conversor.php" method="get"> <!--Dados para conversão-->
+            <label for="din">Quantos R$ você quer converter?</label>
+                <input  type="number" name="din" id="din" step="0.01" placeholder="Digite apenas números" />
+                </div>
+                <div class="div-button">
+        <button class="button" onclick="window.location.href = 'conversor.php'">Converter</button><!--Envia as informações do input para conversor.php-->
+         </div>
+         </div>
+    </form>
+            <body>
+                <div class="div-paragraph">
+                <p class="paragraph">
+                Cotação atualizada com <a href="https://www.bcb.gov.br/estabilidadefinanceira/cotacoestodas" target="_blank">Banco Central.</a>
                 </p>
+                </div>
             </body>
+            </div>
     </main>
 </body>
 </html>
